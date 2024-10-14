@@ -1,25 +1,34 @@
+
+
 ![image](https://github.com/user-attachments/assets/cc6fceb1-9a92-46d8-836a-3f46e3b503a8)
 
-Choose between thousands of markets and 80+ exchanges
+Leveraging on CCXTs library, enabling you to pick choose between 75k+ of markets from 80+ exchanges
 
 ![image](https://github.com/user-attachments/assets/3ada5b0a-278a-4890-a2f2-2f60ede1f27f)
 
-TradingView style layout with Lightweight-Charts - If you are used to charting in TradingView, you are already used to navigating the charts!
+Utilising TradingViews Lightweight-Charts - If you are used to charting in TradingView, you are already used to navigating the charts!
 
 ---
 
 All data is yours to keep, calculate and manipulate. 
 
-The app runs on you own device. No third party subscriptions needed.
+The app runs permissionless on you own device - Do what you need to do with your copy.
+
+Trustless - No third party subscriptions needed.
 
 Your keys stays your own.
 
-Supports multi screening.
 
+Data mining and data visualisation in real-time.
+
+Supports multi charting.
 
 Roadmap (timeline is undefined, since this is still at hobby level)
-- Customisable scripts in UI, able to be executed with the Python backend - Accessing any installed libraries on you device
+- Customisable scripting in UI, able to be executed in the Python backend - Accessing any installed libraries on you device
 - Standard indicator library (Variety of MA, RSI, ATR and more)
+- Harmonised backtesting (results measured in Risk to Reward for signal comparison)
+- Manual trading
+- Multi account management 
 - Automated trading
 - Portfolio visualisation
 - Visual risk managment
