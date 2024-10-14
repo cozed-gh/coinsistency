@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+        </style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+        <link rel="stylesheet" href="static/styles.css" />
+        <title>Coinsistency</title>
+    </head>
+    <body>
+        <div id="header">
+            <div id="logo">Coinsistency</div>
+        </div>
+
+        <div id="chart">
+            <div id="chart-header">
+                <p id="selected-exchange"></p>
+                <p id="selected-symbol"></p>
+                <select id="selected-timeframe"></select>
+            </div>
+            <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+            <script src={{ url_for('static', filename='chart.js') }}></script>
+            <div id="tradingview"><a href="https://www.tradingview.com/">lightweight-charts by <b>TradingView</b></a></div>
+        </div>
+
+        <div id="right">
+            <div id="item">
+                <label for="ohlcv-since">OHLCV Since</label>
+                <input name="ohlcv-since" type="date" id="ohlcv-since">
+            </div>
+            <div id="item">
+                <button name="Add market" id="add-market" class="item" onclick="showHide('search-markets')">
+                    <span class="material-symbols-outlined left">bar_chart</span>
+                    Add market
+                </button>
+            </div>
+            <hr/>
+            <div id="user-markets">
+                <div id="user-market"></div>
+            </div>
+        </div>
+
+        <div id="footer-handle" class="material-symbols-outlined">drag_handle</div>
+
+        <div id="footer">
+        </div>
+
+        <div id="search-markets">
+            <div id="title-bar">
+                <p class="title">Search markets</p>
+                <button id="close-button" onclick="closeDiv('search-markets')">
+                    <span class="material-symbols-outlined highlight">close</span>
+                </button>
+            </div>
+            <div>
+                <input type="text" id="search-query" placeholder="What is your next target?" style="margin-bottom: 10px;" autofocus autocomplete="off">
+                <div id="result-container">
+                    <div id="result-hits"></div>
+                    <div id="prevPage"></div>
+                    <div id="result-current"></div>
+                    <div id="nextPage"></div>
+                    <div id="result-pages"></div>
+                </div>
+                <div id="search-result">
+                    Initiate a search by typing exchange name and/or market symbol, ie <i>"binance btc usdt"</i>...
+                </div>
+            </div>
+        </div>
+
+        <div class="notification-container"></div>
+
+        <script src={{ url_for('static', filename='functions.js') }}></script>
+    </body>
+</html>
