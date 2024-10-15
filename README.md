@@ -2,11 +2,11 @@
 
 ![image](https://github.com/user-attachments/assets/cc6fceb1-9a92-46d8-836a-3f46e3b503a8)
 
-Leveraging on CCXTs library, enabling you to pick choose between 75k+ of markets from 80+ exchanges
+Leveraging on CCXTs library, enabling you to pick and choose between 75k+ of markets from 80+ exchanges
 
 ![image](https://github.com/user-attachments/assets/3ada5b0a-278a-4890-a2f2-2f60ede1f27f)
 
-Utilising TradingViews Lightweight-Charts - If you are used to charting in TradingView, you are already used to navigating the charts!
+Utilising TradingViews Lightweight-Charts - In order to bring a familiar way to navigate through your charts!
 
 ---
 
