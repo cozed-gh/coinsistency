@@ -6,7 +6,7 @@ Leveraging on CCXTs library, enabling you to pick and choose between 75k+ of mar
 
 ![image](https://github.com/user-attachments/assets/3ada5b0a-278a-4890-a2f2-2f60ede1f27f)
 
-Utilising TradingViews Lightweight-Charts - In order to bring a familiar way to navigate through your charts!
+Utilising TradingViews Lightweight-Charts - Bringing a familiar way to navigate through your charts!
 
 ---
 
