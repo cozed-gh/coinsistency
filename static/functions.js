@@ -261,15 +261,13 @@ function showNotification(message) {
         })
   }
 
-function updateChartHeader(exchange, symbol, timeframe, length, polling_frequency) {
-    fetch(`/get_chart_header`)
+function updateChartHeader(exchange, symbol, timeframe) {
+    fetch(`/get_chart_defaults`)
     .then(response => response.json())
     .then(data => {
         exchange = exchange !== undefined ? exchange : data.exchange
         symbol = symbol !== undefined ? symbol : data.symbol
         timeframe = timeframe !== undefined ? timeframe : data.timeframe
-        length = length !== undefined ? length : data.length
-        polling_frequency = polling_frequency !== undefined ? polling_frequency : data.polling_frequency
 
         const headerContainer = document.getElementById('chart-header')
         headerContainer.style.zIndex = '3'

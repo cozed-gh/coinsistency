@@ -1,9 +1,8 @@
 import os
 import json
-from flask import request, jsonify
 import re
 
-def search_market(query, q):
+async def search_market(query, q):
     file_path = os.path.join('data_storage', 'all_markets.json')
     all_markets = json.load(open(file_path, 'r'))
 
@@ -20,4 +19,4 @@ def search_market(query, q):
     
     matching_markets.sort(key=lambda x: (x[0], x[1]))
 
-    return q.put(matching_markets)
+    return matching_markets

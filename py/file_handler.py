@@ -80,6 +80,12 @@ def read_json(path, file_name):
         file_data = {}
     return file_data
 
+def read_assets(exchange, account):
+    path = os.path.join('user_data', exchange)
+    file_path = os.path.join(path, account + '.json')
+
+
+
 
 def sanitize_file_name(file_name):
     invalid_chars = r'[\\/:*?"<>|]'
